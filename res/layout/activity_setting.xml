@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cqupt.wss.wifiintrusioncollection.SettingActivity" >
+
+    <LinearLayout  
+        android:id="@+id/ll_lv"
+      	android:layout_width="fill_parent" 
+		android:layout_height="0dp"
+		android:layout_weight="1" > 
+	    <ListView
+	      	android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:choiceMode="multipleChoice"
+			android:id="@+id/lv"/>
+    </LinearLayout> 
+    <LinearLayout  
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="vertical">  
+  
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:text="@string/default_ip"
+            android:textColor="#21649B"
+            tools:ignore="LabelFor" />
+
+        <Button  
+            android:layout_width="fill_parent"  
+	        android:layout_height="wrap_content" 
+            android:id="@+id/done"
+            android:text="@string/done_zh"
+            android:background="#3175B4"
+            android:textColor="#F8F8FF" />
+    </LinearLayout>
+
+</LinearLayout>
